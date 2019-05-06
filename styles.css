@@ -1,0 +1,111 @@
+*, input {
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+.panel {
+    width: fit-content;
+    margin: 100px auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: fit-content;
+    margin: 100px auto;
+}
+
+table td,
+table th {
+    border: 1px solid black;
+    padding: 5px 20px;
+    color: gray;
+}
+
+table th {
+    background-color: dodgerblue;
+    color: white;
+    text-transform: capitalize;
+}
+
+table .add-button {
+    text-align: center;
+    cursor: pointer;
+    background: linear-gradient(to left, rgb(212, 63, 155), rgb(236, 135, 18));
+    color: white;
+    border: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: .2s;
+}
+
+table .add-button:hover {
+    color: black;
+    text-shadow: 0 0 1px black;
+    
+}
+
+table .add-button.loading {
+    background: white;
+    border: 1px solid black;
+}
+
+table button.control-button {
+    width: 100px;
+    text-decoration: underline;
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+}
+
+table button.control-button:hover {
+    text-decoration: none;
+}
+
+table button.edit-button {
+    color: orange;
+}
+
+table button.delete-button {
+    color: red;
+}
+
+table button.confirm-button {
+    color: green;
+}
+
+table button.add-user-button {
+    color: white;
+}
+
+table .edit-field {
+    background: none;
+    border: none;
+    padding: none;
+    margin: none;
+    display: block;
+    outline: none;
+    font-size: 16px;
+}
+
+table .edit-field.add-button-field {
+    display: inline-block;
+    background: linear-gradient(to left, rgb(212, 63, 155), rgb(236, 135, 18));
+    color: white;
+    margin: 0 5px;
+    padding: 5px 7px;
+    box-sizing: border-box;
+}
+
+table .edit-field.add-button-field::placeholder {
+    color: white;
+    opacity: .5;
+}
+
+.preloader {
+    margin: 0 auto;
+}
