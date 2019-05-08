@@ -27,10 +27,12 @@
             break;
         case 'DELETE':
             $output = delete_handler($db);
-            break;
+	    $output = json_encode($output);
+	    break;
         case 'ADD':
-            $output = add_handler($db);
-            break;
+	    $output = add_handler($db);
+	    $output = json_encode($output);
+	    break;
     }
 
     echo $output;
@@ -45,6 +47,7 @@
         else
             $result = [];
 
+	$output = [];
         foreach($result as $row)
         {
             $output[]['id']             = $row['id'];
