@@ -16,7 +16,7 @@
             <option value="name">Name</option>
             <option value="last_name">Last Name</option>
             <option value="login">Login</option>
-            <option value="Password">Password</option>
+            <option value="password">Password</option>
         </select>
         <input type="text" id="selective-delete-input">
         <button id="selective-delete-button">Delete</button>
